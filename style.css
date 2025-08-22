@@ -15,7 +15,7 @@ body {
 #card {
   width: 320px;
   background: hsl(213, 19%, 18%);
-  padding: 20px;
+  padding: 32px 20px;
   border-radius: 24px;
   position: absolute;
   top: 50%;
@@ -65,6 +65,12 @@ h1 {
   font-size: 1.05rem;
   font-weight: 700;
   font-family: "Overpass", sans-serif;
+  transition: .1s;
+  cursor: pointer;
+}
+
+#rating_state_buttons button:hover{
+  background-color: hsl(25, 97%, 53%);
 }
 
 #submit_rating {
@@ -77,10 +83,21 @@ h1 {
   letter-spacing: 3px;
   font-family: "Overpass", sans-serif;
   background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: .1s;
+}
+
+#submit_rating:hover{
+  background-color: hsl(0, 0%, 100%);
 }
 
 #thank_you_state {
   text-align: center;
+  display: none;
+}
+
+.data-show{
+  display: block;
 }
 
 #rating_selection {
@@ -101,4 +118,9 @@ h1 {
 
 #thank_you_state p{
   color: hsl(217, 12%, 63%);
+}
+
+#rating_state_buttons .active {
+  color: hsl(213, 19%, 18%);
+  background: hsl(0, 0%, 100%);
 }
