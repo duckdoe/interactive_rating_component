@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: hsl(216, 12%, 8%);
+  font-size: 0.9375rem;
+  line-height: 22px;
+}
+
+#card {
+  width: 320px;
+  background: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#star {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+#rating_state_container p {
+  margin-bottom: 24px;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#rating_state_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+#rating_state_buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  color: hsl(217, 12%, 63%);
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+}
+
+#submit_rating {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 32px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(25, 97%, 53%);
+}
+
+#thank_you_state {
+  text-align: center;
+}
+
+#rating_selection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+#rating_selection .background {
+  padding: 4px 24px;
+  border-radius: 24px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(217, 12%, 63%, 0.1);
+  width: max-content;
+}
+
+#thank_you_state p{
+  color: hsl(217, 12%, 63%);
+}
